@@ -17,6 +17,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* 5. Improve media defaults */
 img,
 picture,
@@ -95,7 +99,8 @@ header ul {
   font-size: 3rem;
 }
 
-.resume {
+.resume,
+.reviews div {
   display: flex;
   justify-content: space-between;
 }
@@ -103,15 +108,36 @@ header ul {
 .resume > * {
   width: 100%;
 }
-.resume h2 {
-  padding: 1rem;
-}
 
 .projects ul {
   list-style: none;
   padding: 0;
 }
 
-.projects ul li h3 {
+article {
+  padding: 0.5rem 1rem;
+}
+article.projects {
+  padding: 0rem;
+}
+
+.projects h3,
+.projects h2 {
   padding: 0.35rem 1rem;
+}
+.reviews {
+  padding: 0.5rem 1rem;
+}
+.reviews article {
+  border: 3px solid black;
+  border-radius: 30px;
+  width: 30%;
+}
+.reviews article footer {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
 }
