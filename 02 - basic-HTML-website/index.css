@@ -1,0 +1,143 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+body {
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+section {
+  border: 1px solid black;
+}
+
+header ul {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 7rem 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.resume,
+.reviews div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume > * {
+  width: 100%;
+}
+
+.projects ul {
+  list-style: none;
+  padding: 0;
+}
+
+article {
+  padding: 0.5rem 1rem;
+}
+article.projects {
+  padding: 0rem;
+}
+
+.projects h3,
+.projects h2 {
+  padding: 0.35rem 1rem;
+}
+.reviews {
+  padding: 0.5rem 1rem;
+}
+.reviews article {
+  border: 3px solid black;
+  border-radius: 30px;
+  width: 30%;
+}
+.reviews article footer {
+  text-align: left;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}

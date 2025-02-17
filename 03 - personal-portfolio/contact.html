@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Contact form for a simple HTML-only website for roadmap.sh frontend"
+    />
+    <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
+    <meta name="author" content="Austin Hill" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact | Personal Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <p>Jorge L Almonte</p>
+      <nav>
+        <ul>
+          <li role="separator"><a href="index.html">Home</a></li>
+          <li role="separator"><a href="index.html#projects">Projects</a></li>
+          <li role="separator"><a href="articles.html">Articles</a></li>
+          <li role="separator"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact">
+        <h1 class="text-center">Contact Me</h1>
+        <form action="submit_form.php" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="btn btn-shadow-drop btn-shadow-drop" type="submit">
+            Send Message
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; all rights reserved 2025</p>
+    </footer>
+  </body>
+</html>
